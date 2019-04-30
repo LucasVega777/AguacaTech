@@ -7,25 +7,26 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<link rel="stylesheet" type="text/css" href="/static/css/estilos.css">
+<link rel="stylesheet" type="text/css" href="/static/css/imgcont.css">
 
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href=" " class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
-    <a href="noticias/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Noticias</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contacto</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">FAQ</a>
+  <div class="w3-bar w3-purple w3-card w3-left-align w3-large w3-card-4 w3-opacity">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
+    <a href="/noticias/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pink">Noticias</a>
+    <a href="/contacto/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pink">Contacto</a>
+    <a href="/faq/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pink">FAQ</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="noticias/" class="w3-bar-item w3-button w3-padding-large">Noticias</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Contacto</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">FAQ</a>
+    <a href="/noticias/" class="w3-bar-item w3-button w3-padding-large">Noticias</a>
+    <a href="/contacto/" class="w3-bar-item w3-button w3-padding-large">Contacto</a>
+    <a href="/faq/" class="w3-bar-item w3-button w3-padding-large">FAQ</a>
   </div>
 </div>
 
@@ -33,36 +34,38 @@
 <header>
 </head>
 <body>
-
+<br>
+<br>
+<br>
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="imagenes/fondo1.png" alt="study abroad 2" style="width:100%">
+  <img src="/static/imagenes/fondo1.png" alt="study abroad 2" style="width:100%">
   <div class="centered" style="font-size:10vw;  color:white;text-shadow: 3px 2px black;">AGUACATECH<br><h2>Study Abroad</h2></div>
-<div class="text-block">
-    <h4>Mision</h4>
-    <p>Aiudar a la genchi</p>
+<div class="text-block w3-purple w3-opacity">
+    <h4 style="color:white;text-shadow: 3px 2px black;">Mision</h4>
+    <p style="color:white;text-shadow: 3px 2px black;">Aiudar a la genchi</p>
   </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="imagenes/fondo2.png" alt="study abroad 3" style="width:100%">
+  <img src="/static/imagenes/fondo2.png" alt="study abroad 3" style="width:100%">
   <div class="centered" style="font-size:10vw; color:white;text-shadow: 3px 2px black;">AGUACATECH<br><h2>Study Abroad</h2></div>
-<div class="text-block">
-    <h4>Vision</h4>
-    <p>Murio a manos de Thanos</p>
+<div class="text-block w3-purple w3-opacity">
+    <h4 style="color:white;text-shadow: 3px 2px black;">Vision</h4>
+    <p style="color:white;text-shadow: 3px 2px black;">Murio a manos de Thanos</p>
   </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="imagenes/fondo3.jpg" alt="study abroad 4" style="width:100%">
+  <img src="/static/imagenes/fondo3.jpg" alt="study abroad 4" style="width:100%">
   <div class="centered" style="font-size:10vw; color:white;text-shadow: 3px 2px black;">AGUACATECH<br><h2>Study Abroad</h2></div>
-<div class="text-block">
-    <h4>Animate!</h4>
-    <p>Hay una oportunidad para vos</p>
+<div class="text-block w3-purple w3-opacity">
+    <h4 style="color:white;text-shadow: 3px 2px black;">Animate!</h4>
+    <p style="color:white;text-shadow: 3px 2px black;">Hay una oportunidad para vos</p>
   </div>
 </div>
 
@@ -100,39 +103,31 @@ function showSlides() {
 
 <!-- First Grid -->
      <br><br> <h1>CATEGORIAS</h1>
+<div class="row">
 <div class="container">
-
-  <img src="imagenes/fondo1.png" alt="study abroad 2" style="width:30%">
-<div class="dropdown">
-    <a href="grado/">  <button class="dropbtn"> Carreras de Grado</button> 
-  <div class="dropdown-content">
-    <a href="#">BECAL</a>
-    <a href="#">Fullbright</a>
-    <a href="#">Chevening</a>
-  </div>
-</div>
+  <img src="/static/imagenes/fondo1.png" alt="study abroad 2" style="width:30vw">
+<a class="btn w3-purple" href="grado/">Becas de Grado</a>
 </div>
 
 <div class="container">
-  <img src="imagenes/fondo2.png" alt="study abroad 2" style="width:30%">
-<div class="dropdown">
-    <a href="postgrado/">  <button class="dropbtn">Post-Grado</button>
-  <div class="dropdown-content">
-    <a href="#">Becal</a>
-    <a href="#">Fullbright</a>
-    <a href="#">Chevening</a>
-  </div>
-</div>
+  <img src="/static/imagenes/fondo2.png" alt="study abroad 2" style="width:30vw">
+<a class="btn w3-purple" href="maestria/">Maestrias</a>
 </div>
 
 <div class="container">
-  <img src="imagenes/fondo3.jpg" alt="study abroad 2" style="width:30%">
-<div class="dropdown">
-    <a href="doctorado/"> <button class="dropbtn">Doctorado</button>
-  <div class="dropdown-content">
-    <a href="#">Becal</a>
-    <a href="#">Fullbright</a>
-    <a href="#">Chevening</a>
+  <img src="/static/imagenes/fondo3.jpg" alt="study abroad 2" style="width:30vw">
+<a class="btn w3-purple" href="doctorado/">Doctorados</a>
+</div>
+
+<div class="container">
+  <img src="/static/imagenes/fondo3.jpg" alt="study abroad 2" style="width:30vw">
+<a class="btn w3-purple" href="idiomas/">Idiomas</a>
+</div>
+</div>
+
+
+
+
   </div>
 </div>
 </div>
@@ -140,14 +135,13 @@ function showSlides() {
 
 <!-- Second Grid -->
 <br><br> <h1>TESTIMONIOS</h1>	
-
-
-
-
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-ad44d9bb-822d-47c6-be21-4238694229d4"></div>
+<p> </p>
 
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+<footer class="w3-container w3-padding-64 w3-center w3-purple w3-opacity">  
   <div class="w3-xlarge w3-padding-32">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
