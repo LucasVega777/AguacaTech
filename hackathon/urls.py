@@ -28,6 +28,6 @@ urlpatterns = [
     path('', views.index, name='index'), #Creamos la ruta raiz '' y la enlazamos con nuestra vista index del archivo views.py
     path('grado/', views.grado, name = 'grado'),
     path('postgrado/', views.postgrado, name = 'postgrado'),
-    path('doctorado/', views.doctorado, name = 'doctorado'),
+    path('maestria/', views.doctorado, name = 'doctorado'),
     path('noticias/', views.noticias, name = 'noticias')
     ]
