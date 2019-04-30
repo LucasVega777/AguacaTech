@@ -16,7 +16,7 @@ def grado(request):
 
 
 def doctorado(request):
-    return render(request, "doctorado.html")
+    return render(request, "maestria.html")
 
 
 def noticias(request):
