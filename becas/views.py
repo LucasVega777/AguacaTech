@@ -7,17 +7,56 @@ from .models import Becas
 def index(request):
     return render(request, "index.html")
 
-def postgrado(request):
-    return render(request, "postgrado.html")
+def doctorado(request):
+
+    lista_grados = Becas.objects.filter(tipo_beca__nombre="Doctorado")
+
+    nombre_becas = { "name": lista_grados }
+
+    return render(request, "doctorado.html", nombre_becas)
 
 
 def grado(request):
-    return render(request, "grado.html")
+    lista_grados = Becas.objects.filter(tipo_beca__nombre="Grado")
+
+    nombre_becas = { "name": lista_grados }
+
+    return render(request, "grado.html", nombre_becas)
 
 
-def doctorado(request):
-    return render(request, "maestria.html")
+def maestrias(request):
+
+    lista_grados = Becas.objects.filter(tipo_beca__nombre="Maestria")
+
+    nombre_becas = { "name": lista_grados }
+
+    return render(request, "maestria.html", nombre_becas)
+
 
 
 def noticias(request):
+    
     return render(request, "noticias.html")
+
+
+
+def faq(request):
+    return render(request, "faq.html")
+
+
+
+def idiomas(request):
+
+    lista_grados = Becas.objects.filter(tipo_beca__nombre="idiomas")
+
+    nombre_becas = { "name": lista_grados }
+
+    return render(request, "idiomas.html", nombre_becas)
+
+
+
+def contacto(request):
+    return render(request, "contacto.html")
+
+
+

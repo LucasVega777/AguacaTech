@@ -43,10 +43,21 @@
 
 <!-- First Grid -->
 
-<p> </p>
 
 
+  {% for dato in name %}
+   
+      <h2> {{dato.nombre_programa}}</h2>
+      <h3> Descripcion </h3>
+      <p> {{dato.descripcion|linebreaks}} </p>
+      <h4> Requisitos: </h3>
+      <p> {{dato.requisito|linebreaks}} </p>
+      <h4>  Duracion: {{dato.duracion}}
+      <h4> Contactos:</h3>
+      <p> {{dato.contactos|linebreaks}} </p>
 
+            
+    {% endfor %}
 
 
 <!-- Footer -->
