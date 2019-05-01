@@ -77,7 +77,7 @@ def contacto(request):
     if request.method == "POST":
         form = Formulario(request.POST)
         if form.is_valid():
-            return HttpResponseRedirect ('/gracias/')
+            return render(request, 'gracias.html')
     else:
         form = Formulario()
     return render(request, "contacto.html", {'form': form})

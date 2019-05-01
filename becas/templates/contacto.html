@@ -47,7 +47,16 @@
 
 <p> 
   <form action = "/contacto" method = "post"> {% csrf_token %}
-      {{ form.as_p }}
+    <p><label>Nombre</label>
+    <input type="text" name="nombre"><br>
+    <label>Email</label>
+    <input type="email" name="Email"><br>
+    <label>Numero</label>
+    <input type="number" name="Numero"><br>
+    <label>Mensaje</label>
+    <textarea name="Mensaje" maxlength="100"></textarea>  
+
+    </form>
 </p>
 
 
