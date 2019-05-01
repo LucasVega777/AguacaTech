@@ -46,7 +46,7 @@
 <!-- First Grid -->
 <div class="w3-container w3-center">
 <p> 
-  <form action = "/contacto" method = "post"> {% csrf_token %}
+  <form action = "" method = "POST"> {% csrf_token %}
     <p><label>Nombre</label>
     <input type="text" name="nombre"><br>
     <label>Email</label>
@@ -56,11 +56,13 @@
     <label>Mensaje</label>
     <textarea name="Mensaje" maxlength="100"></textarea>  
 
+    <input class="btn w3-white w3-hover-opacity" type = "submit" value = "Enviar"> 
+
     </form>
 </p>
 <br>
 <div class="container">
-  <a class="btn w3-white w3-hover-opacity" href="/gracias/">Enviar >></a>
+  
   </div>
 
 
