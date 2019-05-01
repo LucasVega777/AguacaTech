@@ -7,6 +7,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .forms import Formulario
+
+
+
 # Create your views here.
 
 def index(request):
@@ -79,13 +82,30 @@ def contacto(request):
         form = Formulario()
     return render(request, "contacto.html", {'form': form})
 
+from .secrets import contra
+import smtplib
 
 
 def gracias(request):
-    html = '<html><body>"Gracias por enviarnos tu comentario :)</body><html'
-    return HttpResponse(html)
+    message = " Hola, te escribimos del Soporte Tecnico, en estos momentos estaremos resolviendo su consulta, le rogamos paciencia, una respuesta con la  solucion deberia tardar entre unas 3 a 4 horas"
+    subject = "Ayuda Consulta"
+    message = "Subject: {}\n\n{} ".format(subject , message)
+
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+
+    server.starttls()
+
+    server.login("contactosBecasPy.com", contra)
+
+    server.sendmail("contactoBecasPy.com", "cesararroyolezcano@gmail.com",message)
+
+    server.quit()
+
+    return render (request, "gracias.html")
  
 
 
 def sobre(request):
     return render(request, "sobre.html")
+
+
