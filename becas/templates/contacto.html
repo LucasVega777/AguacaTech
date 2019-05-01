@@ -45,7 +45,10 @@
 
 <!-- First Grid -->
 
-<p></p>
+<p> 
+  <form action = "/contacto" method = "post"> {% csrf_token %}
+      {{ form.as_p }}
+</p>
 
 
 

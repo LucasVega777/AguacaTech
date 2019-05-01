@@ -2,6 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Becas
+
+from django.shortcuts import render
+from django.http import HttpResponse
+from django.http import HttpResponseRedirect
+from .forms import Formulario
 # Create your views here.
 
 def index(request):
@@ -56,7 +61,20 @@ def idiomas(request):
 
 
 def contacto(request):
-    return render(request, "contacto.html")
+    if request.method == "POST":
+        form = Formulario(request.POST)
+        if form.is_valid():
+            return HttpResponseRedirect ('/gracias/')
+    else:
+        form = Formulario()
+    return render(request, "contacto.html", {'form': form})
+
+
+
+def gracias(request):
+    html = '<html><body>"Gracias por enviarnos tu comentario :)</body><html'
+    return HttpResponse(html)
+ 
 
 
 def sobre(request):
