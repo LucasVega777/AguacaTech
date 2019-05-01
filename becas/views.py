@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Becas
 
 from django.shortcuts import render
@@ -74,19 +74,26 @@ def programas (request):
 
 
 def contacto(request):
+    print("metodooo "+ request.method)
     if request.method == "POST":
         form = Formulario(request.POST)
         if form.is_valid():
-            return HttpResponseRedirect ('/gracias/')
+            pass
+        return redirect("/gracias/")
     else:
         form = Formulario()
-    return render(request, "contacto.html", {'form': form})
+        return render(request, "contacto.html", {'form': form})
 
 from .secrets import contra
 import smtplib
 
-
 def gracias(request):
+    return render(request, "gracias.html")
+
+
+'''
+def gracias(request):
+    print(contra)
     message = " Hola, te escribimos del Soporte Tecnico, en estos momentos estaremos resolviendo su consulta, le rogamos paciencia, una respuesta con la  solucion deberia tardar entre unas 3 a 4 horas"
     subject = "Ayuda Consulta"
     message = "Subject: {}\n\n{} ".format(subject , message)
@@ -101,9 +108,9 @@ def gracias(request):
 
     server.quit()
 
-    return render (request, "gracias.html")
+    return render(request, "gracias.html")
  
-
+'''
 
 def sobre(request):
     return render(request, "sobre.html")
