@@ -12,7 +12,7 @@ Webservice: scholarship directory for Paraguayan students.
 * Jessica Amarilla https://github.com/jess601
 
 
-# TODO
+# TO DO
 
 * Documentation
 * Add more scholarship programs
