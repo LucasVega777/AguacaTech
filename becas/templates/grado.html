@@ -13,11 +13,12 @@
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-purple w3-opacity w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  <div class="w3-bar w3-purple w3-card w3-left-align w3-large w3-card-4 w3-opacity">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="/" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
     <a href="/noticias/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pink">Noticias</a>
     <a href="/contacto/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pink">Contacto</a>
+    <a href="/sobre/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pink">Sobre Nosotros</a>
     <a href="/faq/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pink">FAQ</a>
   </div>
 
@@ -25,6 +26,7 @@
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="/noticias/" class="w3-bar-item w3-button w3-padding-large">Noticias</a>
     <a href="/contacto/" class="w3-bar-item w3-button w3-padding-large">Contacto</a>
+    <a href="/sobre/" class="w3-bar-item w3-button w3-padding-large">Sobre Nosotros</a>
     <a href="/faq/" class="w3-bar-item w3-button w3-padding-large">FAQ</a>
   </div>
 </div>
@@ -42,12 +44,12 @@
 </header>
 
 <!-- First Grid -->
+<br>
 
-
-
+<div class="w3-container">
   {% for dato in name %}
    
-      <h2> {{dato.nombre_programa}}</h2>
+      <div class="w3-container w3-purple"><h2> {{dato.nombre_programa}}</h2></div>
       <h3> Descripcion </h3>
       <p> {{dato.descripcion|linebreaks}} </p>
       <h4> Requisitos: </h3>
@@ -58,7 +60,7 @@
 
             
     {% endfor %}
-
+</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-purple">  
