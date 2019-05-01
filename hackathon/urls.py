@@ -23,6 +23,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'), #Creamos la ruta raiz '' y la enlazamos con nuestra vista index del archivo views.py
@@ -32,6 +33,8 @@ urlpatterns = [
     path('noticias/', views.noticias, name = 'noticias'),
     path('idiomas/', views.idiomas, name = 'idiomas'),
     path('contacto/', views.contacto, name = 'contacto'),
+    path('gracias/', views.gracias, name = 'gracias'),
     path('faq/', views.faq, name = 'faq'),
     path("sobre_nosotros/", views.sobre, name = "sobre_nosotros"),
     ]
+
