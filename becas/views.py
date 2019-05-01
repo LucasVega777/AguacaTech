@@ -12,6 +12,7 @@ from .forms import Formulario
 def index(request):
     return render(request, "index.html")
 
+
 def doctorado(request):
 
     lista_grados = Becas.objects.filter(tipo_beca__nombre="Doctorado")
@@ -57,6 +58,15 @@ def idiomas(request):
     nombre_becas = { "name": lista_grados }
 
     return render(request, "idiomas.html", nombre_becas)
+
+
+def programas (request):
+
+    lista_grados = Becas.objects.filter(tipo_beca__nombre="programas")
+
+    nombre_becas = { "name": lista_grados }
+
+    return render(request, "programas.html", nombre_becas)
 
 
 

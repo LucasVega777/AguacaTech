@@ -57,7 +57,8 @@
       <h4>  Duracion: {{dato.duracion}}
       <h4> Contactos:</h3>
       <p> {{dato.contactos|linebreaks}} </p>
-
+      <a href="mailto:{{dato.correo}}?Subject=Hello%20again" target="_top">
+        Envia tus preguntas a: {{dato.correo}} </a>
             
     {% endfor %}
 </div>

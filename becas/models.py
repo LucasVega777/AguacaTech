@@ -12,6 +12,7 @@ class Becas(models.Model): #solo clases en mayuscula
     requisito = models.TextField(null=True, blank=True)
     duracion = models.CharField(max_length=50)
     contactos = models.TextField(null=True, blank=True)
+    correo = models.EmailField(null=True, blank=True)
     
     def __str__(self):
         return self.nombre_programa
