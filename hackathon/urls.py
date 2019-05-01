@@ -33,4 +33,5 @@ urlpatterns = [
     path('idiomas/', views.idiomas, name = 'idiomas'),
     path('contacto/', views.contacto, name = 'contacto'),
     path('faq/', views.faq, name = 'faq'),
+    path("sobre_nosotros/", views.sobre, name = "sobre_nosotros"),
     ]

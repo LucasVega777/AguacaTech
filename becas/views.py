@@ -59,4 +59,5 @@ def contacto(request):
     return render(request, "contacto.html")
 
 
-
+def sobre(request):
+    return render(request, "sobre.html")
