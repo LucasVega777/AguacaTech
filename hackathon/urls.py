@@ -27,7 +27,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'), #Creamos la ruta raiz '' y la enlazamos con nuestra vista index del archivo views.py
     path('grado/', views.grado, name = 'grado'),
-    path('postgrado/', views.postgrado, name = 'postgrado'),
-    path('maestria/', views.doctorado, name = 'doctorado'),
-    path('noticias/', views.noticias, name = 'noticias')
+    path('doctorado/', views.doctorado, name = 'doctorado'),
+    path('maestria/', views.maestrias, name = 'maestria'),
+    path('noticias/', views.noticias, name = 'noticias'),
+    path('idiomas/', views.idiomas, name = 'idiomas'),
+    path('contacto/', views.contacto, name = 'contacto'),
+    path('faq/', views.faq, name = 'faq'),
     ]
