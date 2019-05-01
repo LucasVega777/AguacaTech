@@ -1,8 +1,10 @@
 # AguacaTech
+
 Webservice: scholarship directory for Paraguayan students.
 
 
 # Authors
+
 * Lucas Vega https://github.com/lucasvega777
 * Sandra Silvano https://github.com/sandra-silvano
 * Cesar Arroyo https://github.com/CaesarSalad666
@@ -11,9 +13,11 @@ Webservice: scholarship directory for Paraguayan students.
 
 
 # TODO
-Documentation
-Add more scholarship programs
+
+* Documentation
+* Add more scholarship programs
 
 
 # License
+
 This project is licensed under the Apache 2.0 License - see the [LICENSE.txt](LICENSE.txt) file for details
